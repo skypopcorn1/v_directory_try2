@@ -1,0 +1,108 @@
+/* main.css */
+
+body {
+  background-color: #ddd;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0 20px;
+}
+
+main {
+  padding: 0;
+  margin: 0 auto;
+}
+
+section {
+  padding: 0;
+  margin: 0;
+  min-width: 200px;
+  border-radius: 3px;
+  background-color: white;
+  text-align: center;
+  display: inline-block;
+  margin: 10px 10px 10px 10px;
+}
+
+h1 {
+	color: purple;
+}
+
+h2 {
+  font-size: 1.7em;
+  font-weight: bold;
+  padding: 0;
+  margin: 0 20px;
+}
+
+form{
+  margin: 20px 20px;
+  min-width: 300px;
+  text-align: left;
+}
+
+.profile-title{
+  text-align: center;
+}
+.person-title {
+  font-size: 1em;
+  color: #aaa;
+  margin: 5px 0 5px 0;
+  padding: 0;
+}
+
+.person-email {
+  font-size: 1em;
+  margin: 5px 0 5px 0;
+  padding: 0;
+}
+
+.person-phone {
+  color: #0079CD;
+  font-size: 1em;
+  margin: 5px 0 5px 0;
+  padding: 0;
+}
+
+.login-screen {
+  background-color: #6B3692;
+}
+
+.login-screen-text {
+  color: white;
+  margin: 20px auto 0 auto;
+  text-align: center;
+}
+
+.logo{
+  margin: 0 auto 0 auto; 
+  display: block;
+  width: 15%;
+}
+
+.profile-img {
+  border-radius: 90px;
+  min-width: 50px;
+  max-width: 100px;
+  margin: 10px auto;
+}
+
+.tile {
+  background: white; 
+  border-radius: 8px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  border-radius: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-text{
+  text-align: center;
+}

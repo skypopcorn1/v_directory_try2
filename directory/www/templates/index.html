@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<body>
+	<main>
+	<h1>Welcome to Volantio</h1>
+		{% for person in people %}
+		<section>
+			<a href="{% url 'team_member_detail' person.slug %}">
+				<img src="{{ person.image }}" class="profile-img" />
+			</a>
+			<h2> {{ person.name }} </h2>
+			<p class="person-title"> {{ person.title }} </p>
+			<p class="person-email"> {{ person.email }} </p>
+			<p class="person-phone"> {{ person.phone }} </p>
+		</section>
+		{% endfor %}
+	</main>
+</body>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<body>
+	<main>
+	<h1 class="profile-title">{{ person.name}}'s page.</h1>
+		<section>
+			<img src="{{ person.image }}" class="profile-img" />	
+			<h2> {{ person.name }} </h2>
+			<p class="person-title"> {{ person.title }} </p>
+			<p class="person-email"> {{ person.email }} </p>
+			<p class="person-phone"> {{ person.phone }} </p>
+			<p class="person-title"> {{ person.hobbies }} </p>	
+			<p class="person-title"> {{ person.bio }} </p>
+
+		</section>
+		{% if user.email == person.email %}
+		<a href="{% url 'team_member_edit' person.slug %}">
+		<button>
+			Edit Profile
+		</button>
+		</a>
+		{% endif %}
+	</main>
+</body>
+{% endblock %}
