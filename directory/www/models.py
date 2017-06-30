@@ -11,9 +11,10 @@ class Person(models.Model):
 	image = models.CharField(max_length=200)
 	slug = models.SlugField(max_length=40, blank=True)
 	hobbies = models.CharField(max_length=1000, default = '')
-	bio = models.CharField(max_length=1000, default = '')
+	bio = models.TextField(max_length=1000, default = '')
 	birthday = models.DateField(default = timezone.now)
 	github = models.CharField(max_length=40, blank=True)
+	mantra = models.CharField(max_length=25, blank=False)
 
 	def save(self, *args, **kwargs):
 		if not self.pk:

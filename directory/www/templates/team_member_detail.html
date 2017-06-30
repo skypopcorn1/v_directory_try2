@@ -4,8 +4,9 @@
 {% block content %}
 <body>
 	<main>
-	<h1 class="profile-title">{{ person.name}}'s page.</h1>
+	
 		<section>
+			<h1 class="profile-title">{{ person.mantra}}</h1>
 			<img src="{{ person.image }}" class="profile-img" />	
 			<h2> {{ person.name }} </h2>
 			<p class="person-title"> {{ person.title }} </p>
@@ -17,7 +18,7 @@
 		</section>
 		{% if user.email == person.email %}
 		<a href="{% url 'team_member_edit' person.slug %}">
-		<button>
+		<button class="btn btn-info">
 			Edit Profile
 		</button>
 		</a>

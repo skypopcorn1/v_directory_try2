@@ -2,7 +2,7 @@
 
 body {
   background-color: #ddd;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: Open Sans, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 16px;
   padding: 0;
   margin: 0 20px;
@@ -16,8 +16,8 @@ main {
 section {
   padding: 0;
   margin: 0;
-  min-width: 200px;
-  border-radius: 3px;
+  min-width: 300px;
+  border-radius: 4px;
   background-color: white;
   text-align: center;
   display: inline-block;
@@ -25,7 +25,7 @@ section {
 }
 
 h1 {
-	color: purple;
+	color: #6B3692;;
 }
 
 h2 {
@@ -41,14 +41,76 @@ form{
   text-align: left;
 }
 
+input[type=text], textarea{
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.btn-save {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    background-color: #6B3692;
+    color: white;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #6B3692;
+    border-color: #46b8da;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    border-radius: 4px;
+}
+
+
 .profile-title{
   text-align: center;
+  margin: 0 20px;
 }
 .person-title {
   font-size: 1em;
   color: #aaa;
   margin: 5px 0 5px 0;
   padding: 0;
+}
+
+.profile-tile {
+  box-shadow: 2px 2px 1px #bbb;
+}
+
+.profile-form{
+  min-width: 600px;
+  box-shadow: 2px 2px 1px #bbb;
 }
 
 .person-email {
@@ -106,3 +168,4 @@ form{
 .center-text{
   text-align: center;
 }
+
